@@ -1,0 +1,21 @@
+<h2 class="center"> Register </h2>
+<form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+  <div>
+    <label for="photo"> Photo </label>
+    <input type="file" id="photo" (change)="onFileSelected($event)" formControlName="photo">
+  </div>
+  <div>
+    <label for="firstName">Username :</label>
+    <input type="text" id="firstName" formControlName="name">
+  </div>
+  <div>
+    <label for="email">Email :</label>
+    <input type="email" id="email" formControlName="email">
+  </div>
+  <div>
+    <label for="password">Mot de passe :</label>
+    <input type="password" id="password" formControlName="password">
+  </div>
+  <button type="submit" [disabled]="userForm.invalid">Enregistrer</button>
+  <p *ngIf="confirmMessage"> user enregistré avec succes !!! </p>
+</form>

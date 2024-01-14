@@ -1,0 +1,24 @@
+.image-scroller {
+  position: relative;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5cm;
+}
+
+.button-container button {
+  font-size: 2em;
+  margin: 0 10px;
+}

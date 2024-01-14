@@ -1,0 +1,26 @@
+<h1 class="center"> Liste des Aliments </h1>
+
+<div class="container">
+  <div class="row">
+    <div *ngFor="let aliment of alimentList" class="col m4 s6">
+      <div class="card horizontal">
+        <div class="card-image">
+          <img [src]="aliment.photo"  />
+        </div>
+
+        <div class="card-stacked">
+          <div class="card-content">
+            <p> {{ aliment.nom }}</p>
+            <p> {{ aliment.calorie }}</p>
+            <p> {{ aliment.glucide }}</p>
+            <p> {{ aliment.lipide }}</p>
+            <p> {{ aliment.proteine }}</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>

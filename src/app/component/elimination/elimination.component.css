@@ -1,0 +1,21 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.left-container {
+  flex-basis: calc(75% - 15px);
+  padding: 15px;
+  margin: auto;
+}
+
+.elimination-container {
+  margin-bottom: 15px;
+
+/* Styles for la div de droite */
+.right-container {
+  flex-basis: calc(25% - 15px);
+  padding: 15px;
+}
+

@@ -1,0 +1,9 @@
+<div class="image-scroller">
+  <div class="image-container">
+    <img [src]="images[currentImageIndex]" alt="Image">
+  </div>
+  <div class="button-container">
+    <button (click)="imagePrecedente()">←</button>
+    <button (click)="imageSuivante()">→</button>
+  </div>
+</div>

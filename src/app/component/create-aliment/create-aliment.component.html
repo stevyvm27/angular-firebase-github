@@ -1,0 +1,39 @@
+<h2 class="center"> nouveau aliment </h2>
+<form [formGroup]="alimentForm" (ngSubmit)="onSubmit()">
+  <div>
+    <label for="nom">nom :</label>
+    <input type="text" id="nom" formControlName="nom">
+  </div>
+
+  <div>
+    <label for="calorie">calorie :</label>
+    <input type="text" id="calorie" formControlName="calorie">
+  </div>
+
+  <div>
+    <label for="lipide">lipide :</label>
+    <input type="text" id="lipide" formControlName="lipide">
+  </div>
+
+  <div>
+    <label for="glucide">glucide :</label>
+    <input type="text" id="glucide" formControlName="glucide">
+  </div>
+
+  <div>
+    <label for="proteine">proteine :</label>
+    <input type="text" id="proteine" formControlName="proteine">
+  </div>
+
+  <div>
+    <label for="index_glycemique">index_glycemique :</label>
+    <input type="text" id="index_glycemique" formControlName="index_glycemique">
+  </div>
+
+  <div>
+    <label for="photo"> Image aliment :</label>
+    <input type="file" id="photo" (change)="onFileSelected($event)" formControlName="photo">
+  </div>
+  <button type="submit" [disabled]="alimentForm.invalid">Enregistrer</button>
+  <p *ngIf="confirmMessage"> user enregistré avec succes !!! </p>
+</form>

@@ -1,0 +1,35 @@
+/* debut header */
+header {
+  background-image: url('https://usercontent.one/wp/www.debod.be/wp-content/uploads/2014/10/cropped-tank311.jpg');
+  padding: 10px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title-container {
+  width: 75%; /* Les 3/4 en largeur */
+  margin: auto;
+}
+
+.nav-vertical-container {
+  width: 25%; /* Le 1/4 en largeur */
+}
+
+.nav-vertical-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav-vertical-container li {
+  margin-bottom: 10px;
+}
+
+.nav-vertical-container a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}

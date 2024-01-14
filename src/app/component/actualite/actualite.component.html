@@ -1,0 +1,21 @@
+<table class="center">
+  <thead>
+  <tr>
+    <th>Image</th>
+    <th>Nom</th>
+    <th>Email</th>
+    <th>Action</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let user of userList">
+    <td>
+      <img [src]="user.photo" alt="Image" width="50" height="50" *ngIf="user.photo">
+    </td>
+    <td>{{ user.name }}</td>
+    <td>{{ user.email }}</td>
+    <button (click)="deleteData(user.id)"> DELETE</button>
+  </tr>
+  </tbody>
+</table>
+
